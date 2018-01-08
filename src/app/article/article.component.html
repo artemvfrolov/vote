@@ -1,0 +1,17 @@
+<article class="article">
+  <div class="article__point">
+    <div class="article__point-count">{{ article.votes }}</div>
+    <div class="article__point-text">Points</div>
+  </div>
+  <div class="article__view">
+    <div class="article__view-name">{{ article.title }}</div>
+    <a href="{{ article.link }}"
+       class="article__view-link">{{ article.domain() }}</a>
+    <div class="article__votes">
+      <div class="article__vote-element article__vote-element_up"
+           (click)="voteUp()">upvote</div>
+      <div class="article__vote-element article__vote-element_down"
+           (click)="voteDown()">downvote</div>
+    </div>
+  </div>
+</article>

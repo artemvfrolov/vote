@@ -1,0 +1,68 @@
+.article {
+  display: flex;
+  margin: 0 0 2rem;
+
+  &__point {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 15rem;
+    border-radius: .2rem;
+    background: #ccc;
+    font-weight: bold;
+    text-align: center;
+    padding: 2rem;
+    margin: 0 3rem 0 0;
+  }
+
+  &__point-count {
+    font-size: 5rem;
+  }
+
+  &__point-text {
+    font-size: 3rem;
+  }
+
+  &__view {
+    flex-grow: 1;
+    padding: 1rem 0;
+  }
+
+  &__view-name {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  &__view-link {
+    display: block;
+    color: #ccc;
+    font-size: 2rem;
+    margin: 0 0 3rem;
+  }
+
+  &__votes {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__vote-element {
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+    color: #00f;
+
+    &:hover {
+      color: #00a;
+    }
+
+    &_up:before {
+      content: '\21D1';
+    }
+
+    &_down:before {
+      content: '\21D3';
+    }
+  }
+}
